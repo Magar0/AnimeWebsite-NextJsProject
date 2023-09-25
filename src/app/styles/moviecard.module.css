@@ -31,7 +31,7 @@
 }
 
 .card:hover .cardData {
-    display: inline-block;
+    display: inline;
     padding: 0 5px;
     /* height: 200px; */
     position: relative;

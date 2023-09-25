@@ -23,7 +23,7 @@ const MovieCard = (props) => {
           <div className={styles.cardData}>
 
             <h5>{type}</h5>
-            <p className={styles.genres}>{genres.toString()}</p>
+            <p className={styles.genres}>{genres.join(", ")}</p>
 
             <p className={styles.synopsis}>{synopsis.substring(0, 70)} {synopsis.length > 70 && "..."} </p>
             <div>Read More</div>
