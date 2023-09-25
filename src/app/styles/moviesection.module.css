@@ -1,0 +1,23 @@
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.movieSection {
+    padding: 20px 20px 50px 20px;
+    background-color: #e4ffff;
+
+}
+
+
+
+/* media queries */
+
+@media (max-width:1200px) {
+
+    .img img {
+        width: 70%
+    }
+
+}

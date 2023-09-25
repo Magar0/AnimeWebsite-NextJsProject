@@ -1,0 +1,121 @@
+.page {
+    background-color: ccecf6;
+    padding: 3rem 10rem;
+    margin: 0 5rem;
+}
+
+.type {
+    color: red;
+    margin-left: 2rem;
+}
+
+.title {
+    font-size: 4.5rem;
+    text-transform: uppercase;
+    letter-spacing: 0.5rem;
+    word-spacing: 1rem;
+    margin-bottom: 3rem;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+}
+
+.details {
+    min-width: 45vw;
+    font-size: 1.8rem;
+    margin: 3rem 0 0 10rem;
+}
+
+.flex {
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.4rem;
+}
+
+.description {
+    font-size: 1.5rem;
+    margin: 20px 100px;
+    font-weight: 300;
+    letter-spacing: 0.1rem;
+    word-spacing: 0.5rem;
+    line-height: 2.3rem;
+}
+
+.description span {
+    font-weight: 700;
+    margin-right: 2rem;
+}
+
+/* media queries ........... */
+@media screen and (max-width:1200px) {
+    .page {
+        padding: 3rem 5rem;
+    }
+
+    .description {
+        margin: 20px 0px;
+    }
+
+}
+
+@media (max-width:992px) {
+    .title {
+        font-size: 3.5rem;
+    }
+
+    .details {
+        font-size: 1.5rem;
+        margin: 3rem 0 0 3rem;
+    }
+
+}
+
+@media (max-width:768px) {
+    .page {
+        padding: 10px;
+    }
+
+    .title {
+        font-size: 2.5rem;
+    }
+
+    .image img {
+        height: auto;
+        width: 250px;
+    }
+}
+
+
+@media (max-width:576px) {
+    .page {
+        padding: 15px;
+        margin: 0;
+    }
+
+    .title {
+        font-size: 2rem;
+        letter-spacing: 0.2rem;
+    }
+
+    .details {
+        font-size: 1.3rem;
+        margin: 1rem 0 0 2rem;
+        min-width: 30vw;
+    }
+
+    .image img {
+        width: 150px;
+    }
+
+    .description {
+        font-size: 1.3rem;
+        line-height: 1.7rem;
+    }
+
+    .flex {
+        font-size: 1rem;
+    }
+
+}

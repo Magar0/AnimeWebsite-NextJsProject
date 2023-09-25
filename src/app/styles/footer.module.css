@@ -1,0 +1,176 @@
+.footer {
+    background-color: black;
+    color: white;
+    padding: 30px 60px 10px 60px;
+}
+
+/* top part.......  */
+.footer_top {
+    display: flex;
+    justify-content: space-between;
+    font-size: 3rem;
+    flex-wrap: wrap;
+}
+
+.footer_top a {
+    color: white;
+    margin-right: 20px;
+}
+
+.footer_top a:nth-child(3) {
+    color: blue;
+}
+
+.footer_top a:last-child {
+    color: red;
+}
+
+/* mid part ..............  */
+.footer_link {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: 40px;
+    font-size: 1.6rem;
+}
+
+.box {
+    position: relative;
+    padding: 0px 20px;
+}
+
+.box h3 {
+    margin-bottom: 10px;
+}
+
+.box h3::before {
+    display: inline-block;
+    content: "";
+    height: 2px;
+    width: 40px;
+    background-color: #fff;
+    position: absolute;
+    top: 25px;
+}
+
+.footer_link li {
+    list-style: none;
+    margin-bottom: 5px;
+}
+
+.footer_link a {
+    text-decoration: none;
+    color: white;
+    font-weight: 300;
+}
+
+.input {
+
+    text-align: center;
+}
+
+.input input {
+    display: block;
+    font-size: 1.4rem;
+    padding: 0.5rem 1rem;
+    border-radius: 0.8rem;
+    background-color: antiquewhite;
+    width: 300px;
+    margin: 30px 0 10px 0;
+}
+
+.input button {
+    border-radius: 1.2rem;
+    padding: 0.5rem 2rem;
+    font-size: 1.4rem;
+    cursor: pointer;
+}
+
+/* bottom part..................  */
+.footer_bottom {
+    display: flex;
+    justify-content: center;
+    font-size: 1.3rem;
+    font-weight: 300;
+    margin-top: 30px;
+    color: lightblue;
+    flex-wrap: wrap;
+}
+
+.policy {
+    margin-left: 4rem;
+}
+
+.policy a {
+    color: blue;
+    font-size: 1.3rem;
+}
+
+.policy li {
+    display: inline;
+    font-size: 1.2rem;
+    list-style: none;
+    margin-right: 10px;
+}
+
+/* media queries ............  */
+
+@media (max-width:992px) {
+
+    .footer_top {
+        font-size: 2rem;
+    }
+
+    .box {
+        font-size: 1.3rem;
+    }
+
+    .box h3::before {
+        top: 20px;
+    }
+}
+
+@media (max-width:683px) {
+    .footer_link {
+        justify-content: space-around;
+    }
+
+    .box:last-child {
+        text-align: center;
+        margin-top: 25px;
+    }
+
+    .input input {
+        margin: 20px auto 7px auto;
+    }
+
+}
+
+
+@media (max-width:576px) {
+    .footer {
+        padding: 20px;
+    }
+
+    .footer_top {
+        font-size: 1.6rem;
+    }
+
+    .footer_top a {
+        margin-right: 10px;
+    }
+
+    .box {
+        padding: 0 30px;
+    }
+
+    .input input {
+        width: 215px;
+    }
+}
+
+@media screen and (max-width:305px) {
+    .box {
+        padding: 0 10px;
+    }
+}

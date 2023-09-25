@@ -1,0 +1,157 @@
+.container {
+    background-color: aqua;
+    padding: 5rem 5rem;
+    position: relative;
+    /* min-height: calc(max(600px, 100vh)); */
+    min-height: 600px;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    place-items: center;
+}
+
+.head_text {
+    font-size: 4.8rem;
+    text-transform: uppercase;
+    letter-spacing: 0.8rem;
+    word-spacing: 1rem;
+}
+
+.para {
+    font-size: 2rem;
+    font-weight: 300;
+    margin: 2rem 0 1rem 0;
+}
+
+/* Shape divider ........... */
+
+.custom-shape-divider-bottom-1695494834 {
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+}
+
+.custom-shape-divider-bottom-1695494834 svg {
+    position: relative;
+    display: block;
+    width: calc(133% + 1.3px);
+    height: 167px;
+}
+
+.custom-shape-divider-bottom-1695494834 .shape-fill {
+    fill: #000000;
+}
+
+
+
+/* media queries */
+
+@media (max-width:1200px) {
+
+    .head_text {
+        font-size: 4rem;
+        letter-spacing: 0.5rem;
+    }
+
+    .para {
+        font-size: 1.7rem;
+    }
+
+    .img {
+        text-align: right;
+    }
+
+    .img img {
+        width: 90%;
+        height: auto;
+    }
+}
+
+@media (max-width:992px) {
+
+    .container {
+        min-height: 450px;
+    }
+
+    .content {
+        width: 350px;
+    }
+
+    .head_text {
+        font-size: 3.2rem;
+        letter-spacing: 0.3rem;
+        word-spacing: 0.8rem;
+    }
+
+    .content a {
+        float: right;
+    }
+}
+
+@media screen and (max-width:768px) {
+
+    .content {
+        width: 240px;
+    }
+
+    .head_text {
+        font-size: 2.5rem;
+    }
+
+    .container {
+        padding-top: 3rem;
+        min-height: 350px;
+    }
+
+    .para {
+        margin: 1rem 0 1rem 0;
+    }
+}
+
+@media screen and (max-width:576px) {
+    .grid {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .content {
+        width: 95vw;
+    }
+
+    .container {
+        padding: 2.5rem 0;
+        text-align: center;
+    }
+
+    .head_text {
+        font-size: 2rem;
+        letter-spacing: 0.2rem;
+        word-spacing: 0.5rem;
+    }
+
+    .img {
+        text-align: center;
+    }
+
+    .img img {
+        width: 75%;
+    }
+
+    .content a {
+        float: none;
+    }
+
+    .content {
+        order: 1;
+        margin-bottom: 30px;
+    }
+
+    .custom-shape-divider-bottom-1695494834 svg {
+        height: 100px;
+    }
+
+}

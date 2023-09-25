@@ -1,0 +1,32 @@
+.search_box {
+    font-size: 2rem;
+    border-radius: 1rem;
+    padding: 0.5rem 1rem;
+}
+
+.search_box:focus {
+    outline-style: solid;
+    outline-width: 2px;
+    outline-color: grey;
+}
+
+.search_bar {
+    display: flex;
+    justify-content: end;
+    padding-right: 30px;
+    margin-bottom: 25px;
+}
+
+.btn {
+    background-color: #cc5;
+    font-size: 2rem;
+    padding: 0.3rem 1.5rem;
+    border-radius: 50%;
+    cursor: pointer;
+
+}
+
+.btn:hover {
+    background-color: darkblue;
+    color: #f6ee77;
+}
