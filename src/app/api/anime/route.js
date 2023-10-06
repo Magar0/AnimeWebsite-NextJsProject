@@ -3,6 +3,9 @@ const axios = require('axios');
 
 export async function GET(req, res) {
 
+    // getting query parameter................ 
+    const search = req.nextUrl.searchParams.get('search');
+    console.log(search)
     try {
 
         // using fetch.............. 
@@ -26,7 +29,7 @@ export async function GET(req, res) {
             params: {
                 page: '1',
                 size: '30',
-                // search: query,
+                search: search,
                 genres: 'Fantasy,Drama',
                 sortBy: 'ranking',
                 sortOrder: 'asc'

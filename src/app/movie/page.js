@@ -34,8 +34,7 @@ const Movie = async () => {
 
   const getData = async () => {
     try {
-      const query = search
-      const res = await fetch(`/api/anime`);
+      const res = await fetch(`/api/anime?search=${search}`);
       const datas = await res.json()
       const finalData = datas.result.data
 
@@ -49,7 +48,7 @@ const Movie = async () => {
 
   useEffect(() => {
     getData();
-  }, [])
+  }, [search])
 
 
   return (
